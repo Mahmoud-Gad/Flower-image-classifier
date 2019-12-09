@@ -1,0 +1,5 @@
+python train.py C:\Users\Mahmo\flower_project\flowers --device cuda --hidden_units 300 --architecture densenet121 --epochs 10 --learning_rate 0.03 --save_dir C:\Users\Mahmo\flower_project\mysaves
+
+
+
+python predict.py flower15.jpg mysaves\checkpoint.pth --top_k 3 --category_names cat_to_name.json --gpu
